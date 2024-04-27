@@ -3,6 +3,7 @@ import React from 'react';
 import { FOODS, CATEGORIES } from '../data/dummy-data';
 import FoodItem from '../components/FoodItem';
 import { useLayoutEffect } from 'react';
+import FoodList from '../components/FoodList';
 
 export default function FoodOverviewScreen({ route, navigation }) {
   const categoryId = route.params.categoryId;
@@ -22,28 +23,7 @@ export default function FoodOverviewScreen({ route, navigation }) {
 
   //   console.log(displayedFoods);
 
-  function renderFoodItem(itemData) {
-    console.log(itemData.item);
-    const foodItemProps = {
-      id: itemData.item.id,
-      title: itemData.item.title,
-      imageUrl: itemData.item.imageUrl,
-      affordability: itemData.item.affordability,
-      complexity: itemData.item.complexity,
-    };
-
-    return <FoodItem {...foodItemProps} />;
-  }
-
-  return (
-    <View>
-      <FlatList
-        data={displayedFoods}
-        keyExtractor={(item) => item.id}
-        renderItem={renderFoodItem}
-      />
-    </View>
-  );
+  return <FoodList items={displayedFoods} />;
 }
 
 const styles = StyleSheet.create({});

@@ -17,31 +17,30 @@ export default function FoodItem({
   };
 
   return (
-    <View style={styles.foodItem}>
-      <Pressable
-        style={({ pressed }) => (pressed ? styles.buttonPressed : null)}
-        onPress={FoodItemHandler}
-      >
-        <View style={styles.innerView}>
-          
-        <View>
-            <Image source={{ uri: imageUrl }} style={styles.image} />
-            <Text style={styles.title}>{title}</Text>
-          </View> 
-
-          <View style={styles.details}>
-            <Text style={styles.detailItem}>{complexity}</Text>
-            <Text style={styles.detailItem}>{affordability}</Text>
-          </View>
+    <Pressable
+      style={({ pressed }) => (pressed ? styles.buttonPressed : null)}
+      onPress={FoodItemHandler}
+    >
+      <View style={styles.foodItem}>
+        <View style={styles.labelsContainer}>
+          <Text style={styles.foodName}>{title}</Text>
+          <Text style={styles.foodPrice}>{affordability}</Text>
         </View>
-      </Pressable>
-    </View>
+        <View style={styles.imageContainer}>
+          <Image source={{ uri: imageUrl }} style={styles.image} />
+        </View>
+      </View>
+    </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   foodItem: {
-    margin: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+    height: 50,
+    marginHorizontal: 15,
+    marginVertical: 5,
     backgroundColor: 'white',
     elevation: 4,
     shadowColor: '#171717',
@@ -50,26 +49,30 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
     borderRadius: 10,
   },
-  innerView: {},
-  image: {
-    width: '100%',
-    height: 200,
-  },
-  title: {
-    textAlign: 'center',
-    fontSize: 18,
-    fontWeight: 'bold',
-    margin: 8,
-  },
-  details: {
+  labelsContainer: {
+    flex: 1,
+    paddingHorizontal: 10,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 5,
   },
-  detailItem: {
-    marginHorizontal: 4,
-    fontSize: 12,
+  foodName: {
+    flex: 1,
+    fontSize: 16,
+  },
+  foodPrice: {
+    fontSize: 16,
+    marginLeft: 10,
+  },
+  imageContainer: {
+    width: 60,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  image: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
   },
   buttonPressed: {
     opacity: 0.5,
