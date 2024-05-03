@@ -44,9 +44,6 @@ export default function FoodItem({
           <Text style={styles.foodName}>{title}</Text>
           <Text style={styles.foodPrice}>{affordability}</Text>
         </View>
-        <View style={styles.imageContainer}>
-          <Image source={{ uri: imageUrl }} style={styles.image} />
-        </View>
         <Pressable onPress={changeFavorite} style={styles.favoriteButton}>
           <Ionicons
             name={foodIsFavorite ? 'star' : 'star-outline'}
@@ -63,7 +60,6 @@ const styles = StyleSheet.create({
   foodItem: {
     flexDirection: 'row',
     alignItems: 'center',
-    height: 50,
     height: 80,
     marginHorizontal: 15,
     marginVertical: 5,
@@ -84,28 +80,6 @@ const styles = StyleSheet.create({
   },
   labelsContainer: {
     flex: 1,
-    paddingHorizontal: 10,
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  foodName: {
-    flex: 1,
-    fontSize: 16,
-  },
-  foodPrice: {
-    fontSize: 16,
-    marginLeft: 10,
-  },
-  imageContainer: {
-    width: 60,
-    height: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  image: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
     justifyContent: 'center',
   },
   foodName: {
