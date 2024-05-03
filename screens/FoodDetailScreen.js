@@ -53,7 +53,7 @@ export default function FoodDetailScreen({ route, navigation }) {
             <Ionicons
               name={foodIsFavorite ? 'star' : 'star-outline'}
               size={24}
-              color="white"
+              color="yellow"
               onPress={changeFavorite}
             />
           </Pressable>
