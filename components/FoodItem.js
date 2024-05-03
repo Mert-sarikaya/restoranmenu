@@ -37,27 +37,13 @@ export default function FoodItem({
       onPress={FoodItemHandler}
     >
       <View style={styles.foodItem}>
-<<<<<<< HEAD
-=======
-        <Image source={{ uri: imageUrl }} style={styles.image} />
->>>>>>> 51a0e76 (Değişiklikleri kaydet)
         <View style={styles.labelsContainer}>
           <Text style={styles.foodName}>{title}</Text>
           <Text style={styles.foodPrice}>{affordability}</Text>
         </View>
-<<<<<<< HEAD
         <View style={styles.imageContainer}>
           <Image source={{ uri: imageUrl }} style={styles.image} />
         </View>
-=======
-        <Pressable onPress={changeFavorite}>
-          <Ionicons
-            name={foodIsFavorite ? 'star' : 'star-outline'}
-            size={24}
-            color={foodIsFavorite ? 'gold' : 'gray'}
-          />
-        </Pressable>
->>>>>>> 51a0e76 (Değişiklikleri kaydet)
       </View>
     </Pressable>
   );
@@ -67,12 +53,7 @@ const styles = StyleSheet.create({
   foodItem: {
     flexDirection: 'row',
     alignItems: 'center',
-<<<<<<< HEAD
     height: 50,
-=======
-    justifyContent: 'space-between',
-    height: 100,
->>>>>>> 51a0e76 (Değişiklikleri kaydet)
     marginHorizontal: 15,
     marginVertical: 5,
     backgroundColor: 'white',
@@ -86,7 +67,6 @@ const styles = StyleSheet.create({
   },
   labelsContainer: {
     flex: 1,
-<<<<<<< HEAD
     paddingHorizontal: 10,
     flexDirection: 'row',
     alignItems: 'center',
@@ -109,23 +89,6 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
     borderRadius: 15,
-=======
-    flexDirection: 'column', 
-    marginLeft: 10,
-  },
-  foodName: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  foodPrice: {
-    fontSize: 16,
-    marginTop: 5, 
-  },
-  image: {
-    width: 80,
-    height: 80,
-    borderRadius: 10,
->>>>>>> 51a0e76 (Değişiklikleri kaydet)
   },
   buttonPressed: {
     opacity: 0.5,
