@@ -58,7 +58,7 @@ export default function App() {
           }}
         >
           <Stack.Screen
-            name="Drawer"
+            name=""
             component={DrawerNavigator}
             options={{
               headerShown: false,
