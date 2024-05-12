@@ -37,7 +37,7 @@ function DrawerNavigator() {
         options={{
           title: 'Favorites',
           drawerIcon: () => (
-            <Ionicons name="ios-star-half" size={24} color="black" />
+            <Ionicons name="star-outline" size={24} color="black" />
           ),
         }}
       />
@@ -58,7 +58,7 @@ export default function App() {
           }}
         >
           <Stack.Screen
-            name=""
+            name="Drawer"
             component={DrawerNavigator}
             options={{
               headerShown: false,
