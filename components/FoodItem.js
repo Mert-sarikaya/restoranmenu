@@ -8,7 +8,7 @@ import { useNavigation } from '@react-navigation/native';
 export default function FoodItem({
   id,
   title,
-  imageUrl,
+  imageUrl, 
   affordability,
   complexity,
 }) {
@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 10,
     paddingHorizontal: 10,
+    elevation: 3, 
   },
   imageContainer: {
     justifyContent: 'center',
@@ -84,6 +85,7 @@ const styles = StyleSheet.create({
   },
   foodName: {
     fontSize: 16,
+    fontWeight: 'bold',
     marginBottom: 5,
   },
   foodPrice: {
@@ -95,7 +97,8 @@ const styles = StyleSheet.create({
   },
   favoriteButton: {
     position: 'absolute',
-    top: 'center',
+    top: '50%',
     right: 10,
+    transform: [{ translateY: -12 }],
   },
 });

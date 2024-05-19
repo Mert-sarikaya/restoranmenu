@@ -10,7 +10,10 @@ const favoritesSlice = createSlice({
       state.ids.push(action.payload.id);
     },
     removeFavorite: (state, action) => {
-      state.ids.splice(state.ids.indexOf(action.payload.id, 1));
+      const index = state.ids.indexOf(action.payload.id);
+      if (index !== -1) {
+        state.ids.splice(index, 1);
+      }
     },
   },
 });
