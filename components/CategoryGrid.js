@@ -1,19 +1,22 @@
-import { StyleSheet, Text, View, Pressable } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, Pressable } from 'react-native';
 import React from 'react';
 
-export default function CategoryGrid({ title, color, pressFood }) {
+export default function CategoryGrid({ title, image, pressFood }) {
   return (
     <View style={styles.gridItem}>
       <Pressable
+        android_ripple={{ color: '#fff' }}
         style={({ pressed }) => [
           styles.button,
           pressed ? styles.buttonPressed : null,
         ]}
         onPress={pressFood}
       >
-        <View style={[styles.insideView, { backgroundColor: color }]}>
-          <Text style={styles.title}>{title}</Text>
-        </View>
+        <ImageBackground source={{ uri: image }} style={styles.backgroundImage}>
+          <View style={styles.insideView}>
+            <Text style={styles.title}>{title}</Text>
+          </View>
+        </ImageBackground>
       </Pressable>
     </View>
   );
@@ -22,30 +25,38 @@ export default function CategoryGrid({ title, color, pressFood }) {
 const styles = StyleSheet.create({
   gridItem: {
     flex: 1,
-    height: 150,
+    height: 180,
     margin: 15,
-    borderRadius: 20,
-    elevation: 4,
-    shadowColor: '#171717',
-    shadowOffset: { width: -2, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 3,
+    borderRadius: 15,
+    overflow: 'hidden',
+    elevation: 5,
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
     backgroundColor: 'white',
   },
   button: {
     flex: 1,
   },
+  backgroundImage: {
+    flex: 1,
+    justifyContent: 'center',
+  },
   insideView: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 20,
+    backgroundColor: 'rgba(0,0,0,0.5)', 
+    borderRadius: 15,
   },
   title: {
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: 'bold',
+    color: 'white',
+    textAlign: 'center',
   },
   buttonPressed: {
-    opacity: 0.5,
+    opacity: 0.7,
   },
 });
