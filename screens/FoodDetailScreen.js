@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   },
   detailItem: {
     marginHorizontal: 4,
-    fontSize: 12,
+    fontSize: 20,
     color: 'red',
   },
   listContainer: {
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   subTitleContainer: {
     alignItems: 'center',
     borderBottomWidth: 2,
-    borderBottomColor: 'orange',
+    borderBottomColor: 'green',
     marginVertical: 5,
   },
   subTitle: {
