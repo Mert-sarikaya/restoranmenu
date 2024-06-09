@@ -17,7 +17,7 @@ export const FOODS = [
     'Beef Kebab Plate',
     '$16.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-01.15.37.jpeg?fit=1066%2C1600&ssl=1',
+    'https://static-content.owner.com/funnel/images/6fd2e02a-b25b-430f-9a85-d2403345934c?v=9723297323&w=640&q=80&auto=format',
     [
       'Beef Kebab ',
       'Pita Bread ',
@@ -89,7 +89,7 @@ export const FOODS = [
     'Falafel Plate 🌱',
     '$15.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-01.15.38.jpeg?fit=1600%2C1066&ssl=1',
+    'https://static-content.owner.com/funnel/images/3151a517-05af-4299-80d4-24c8a2a03a11?v=1808723045&w=640&q=80&auto=format',
     ['Falafel', 'Pta Bread', 'Rce', 'Tahin Dressing', 'Arugula', 'Tomato', 'Green Onion']
   ),
   new Food(
@@ -134,7 +134,7 @@ export const FOODS = [
     'Kofte Wrap',
     '$10.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-01.15.37-6.jpeg?fit=1600%2C1066&ssl=1',
+    'https://static-content.owner.com/funnel/images/17f4d6e8-399c-44bc-a449-4528b75795e2?v=4443535860&w=640&q=80&auto=format',
     ['Kofta','Turkish Lavash', 'Lettuce','Tomato','Onion','Italan Parsley']
   ),
   new Food(
@@ -215,7 +215,7 @@ export const FOODS = [
     'Fries',
     '$4.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-01.15.38-16.jpeg?fit=1600%2C1066&ssl=1',
+    'https://static-content.owner.com/funnel/images/ce253a67-2048-4c1c-8e94-c97a88f5d68d?v=5169492764&w=256&q=80&auto=format',
     ['Fries']
   ),
   new Food(
@@ -224,7 +224,7 @@ export const FOODS = [
     'Grape Leaves Plate',
     '$6.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-02.08.36-20.jpeg?fit=1066%2C1600&ssl=1',
+    'https://static-content.owner.com/funnel/images/f1288807-5eef-4fac-85b2-2ea095c05f33?v=9324268786&w=256&q=80&auto=format',
     ['Grape Leaves Plate']
   ),
   new Food(
@@ -233,7 +233,7 @@ export const FOODS = [
     'Greek Fries',
     '$4.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-01.15.38-6.jpeg?fit=1600%2C1066&ssl=1',
+    'https://static-content.owner.com/funnel/images/fcf824d6-adcc-4645-923b-47a7473006df?v=2759353931&w=640&q=80&auto=format',
     ['Greek Fries']
   ),
   new Food(
@@ -242,7 +242,7 @@ export const FOODS = [
     'Haidari Yogurt Dip Plate',
     '$6.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-02.08.36-11.jpeg?fit=1066%2C1600&ssl=1',
+    'https://static-content.owner.com/funnel/images/18ea878f-26e0-406d-a87c-c0e59c50dee7?v=3786444883&w=256&q=80&auto=format',
     ['Haidari Yogurt Dip Plate']
   ),
   new Food(
@@ -251,17 +251,17 @@ export const FOODS = [
     'Hummus Plate',
     '$6.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-02.08.36-19.jpeg?fit=1066%2C1600&ssl=1',
+    'https://static-content.owner.com/funnel/images/5d0a866e-586b-44e7-9df7-6fa02b6c3cb3?v=7059917764&w=384&q=80&auto=format',
     ['Hummus Plate']
   ),
   new Food(
     'f27',
-    ['c4'],
-    'Large Fries',
-    '$5.99',
+    ['c1'],
+    'Grilled Vegan kofta',
+    '$16.99',
     '',
     'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-01.15.38-16.jpeg?fit=1600%2C1066&ssl=1',
-    ['Fries']
+    ['Vegan Kofte Plate','house rice','grilled pita bread','roasted garlic tahini sauce','house salad']
   ),
   new Food(
     'f28',
@@ -287,7 +287,7 @@ export const FOODS = [
     'Turkish Tabbouleh Plate',
     '$7.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-01.15.38-7.jpeg?fit=1600%2C1066&ssl=1',
+    'https://static-content.owner.com/funnel/images/91fd800b-5aac-427c-91ea-b46a8d3c6097?v=8128041864&w=256&q=80&auto=format',
     ['Turkish Tabbouleh Plate']
   ),
   new Food(
@@ -314,7 +314,7 @@ export const FOODS = [
     'Walnut Baklava',
     '$4.99',
     '',
-    'https://i0.wp.com/themediterraneanjoint.com/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-21-at-02.08.35-9.jpeg?fit=1066%2C1600&ssl=1',
+    'https://static-content.owner.com/funnel/images/cd49861c-0076-4095-a1d8-29256d19cd84?v=9523087693&w=256&q=80&auto=format',
     ['Walnut Baklava']
   ),
   new Food(
