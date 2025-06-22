@@ -1,2 +1,68 @@
-Proje gelişimi kapsamında, öncelikle temel yapı oluşturularak proje açılışı gerçekleştirildi. Kullanıcıların kategori ekranına erişimi sağlanarak, kategori ekranının kullanıcı dostu bir arayüzle tasarımı tamamlandı. Ardından, kullanıcıların seçtiği kategorilere göre yemek listesi sayfasına yönlendirilmesi sağlandı ve bu süreçte gerekli kategori ID bilgisinin parametre olarak iletilmesi sağlandı. Seçilen kategoriye ait yemek verilerinin çekilmesi ve kullanıcıya sunulması işlemi gerçekleştirilerek, kullanıcıların bilgilendirici bir yemek listesi ekranıyla karşılaşması sağlandı. Ayrıca, kullanıcının bulunduğu menüyü belirten başlık oluşturularak kullanıcı deneyimi artırıldı. Yemek detaylarının yer aldığı ayrı bir sayfa oluşturuldu ve bu sayfaya yemek ID'si parametre olarak iletilerek detaylı bilgi sunumu sağlandı. Bu süreçte, her adımda kullanıcı dostu bir tasarım hedeflenerek, projenin ilerlemesi sağlandı.
-Proje gelişimi sürecinde, öncelikle Drawer Navigator entegre edildi ve projeye dahil edildi. Bu adım, kullanıcıların gezinme deneyimini iyileştirmek için yapıldı. Ardından, Drawer Navigator'ın başlık ve stil özelliklerine müdahale edilerek, kullanıcı dostu bir görünüm elde edildi. Daha sonra, Context API kullanılarak bir context oluşturuldu ve bu context uygulamanın tüm alanlarını kapsayacak şekilde yapılandırıldı. Bu sayede, favorilere ekleme ve favorilerden çıkarma gibi işlemler kolayca uygulanabildi ve favori listesi görüntülenebildi. Son olarak, Redux Toolkit kullanılarak uygulamaya global durum yönetimi entegre edildi ve Provider bileşeni kapsayıcı olarak verildi. Bu sayede, favorilere ekleme, favorilerden çıkarma ve favori listesini görüntüleme işlemleri Redux Toolkit ile yönetilebildi. Bu adımların tamamlanmasıyla proje, kullanıcılar için daha işlevsel ve kullanıcı dostu bir hale getirilmiş oldu.
+# 📱🍽️ Restoran Menü Uygulaması
+
+Restoran Menü, kullanıcıların restoran menüsüne kolayca ulaşmasını ve detaylı yemek bilgilerini görüntülemesini sağlayan modern ve kullanıcı dostu bir mobil uygulamadır.
+
+---
+
+## ✨ Özellikler
+
+- 📂 **Kategori Görüntüleme**  
+  Restorandaki yemekler kategori bazında listelenir (örn. Başlangıçlar, Ana Yemekler, Tatlılar).
+
+- 📝 **Yemek Listesi**  
+  Seçilen kategoriye ait tüm yemekler, görselleriyle birlikte listelenir.
+
+- 📖 **Yemek Detayları**  
+  Her yemeğe özel içerik açıklaması ve fiyat bilgisi.
+
+- ⭐ **Favoriler**  
+  Beğendiğiniz yemekleri favorilerinize ekleyin.
+
+- 📚 **Navigasyon Deneyimi**  
+  Drawer menü ile uygulama içinde rahatça gezinme.
+
+---
+
+## 🏗️ Proje Gelişim Süreci
+
+### 1️⃣ Temel Yapılandırma
+
+- 📁 Proje kurulumu ve temel ekran yapıları oluşturuldu.
+- 🎨 Kategori ekranı, kullanıcı dostu bir arayüz ile tasarlandı.
+
+### 2️⃣ Kategori ve Listeleme
+
+- 🖼️ Kategori seçimi sonrası ilgili yemekler listelenmektedir.
+- 🆔 Kategori ID kullanılarak doğru yemeklerin görüntülenmesi sağlandı.
+- 🏷️ Menü başlığı dinamik olarak kategoriye göre değişmektedir.
+
+### 3️⃣ Yemek Detay Sayfası
+
+- 🍲 Seçilen yemeğin detayları için ayrı bir ekran hazırlandı.
+- ⚙️ Yemek ID ile veriler çekilerek detay sayfası oluşturuldu.
+
+### 4️⃣ Navigasyon Sistemi
+
+- 📂 Drawer Navigator eklendi.
+- 🖌️ Görsel ve başlık özelleştirmeleri yapıldı.
+
+### 5️⃣ Favori İşlemleri
+
+- ⚙️ Context API ile favori işlemleri geliştirildi.
+- ❤️ Favorilere ekleme/çıkarma işlevi sağlandı.
+
+### 6️⃣ Global Durum Yönetimi
+
+- 🚀 Redux Toolkit ile global state yapısı entegre edildi.
+- 🗃️ Provider kullanılarak uygulamanın tamamı global state ile yönetildi.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- React Native
+- React Navigation (Drawer Navigator)
+- Redux Toolkit
+- Context API
+- Custom Components & Hooks
+
